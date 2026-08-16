@@ -1,0 +1,106 @@
+body {
+/* This controls the main font for the whole page */
+font-family: Arial, Helvetica, sans-serif;
+background-color: #ffffff; /* Light grey background */
+color: #333; /* Dark grey text */
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+
+.container {
+width: 90%;
+max-width: 960px;
+margin: 20px auto; /* Centres the main content area */
+background-color: #ffffff; /* White background for content */
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+overflow: hidden; /* Keeps content inside rounded corners */
+}
+
+/* --- Header and Navigation Menu --- */
+header {
+/* This controls the header background colour */
+background-color: #0078d4; /* A blue colour */
+/* This controls the header text colour */
+color: #ffffff;
+padding: 20px;
+border-bottom: 4px solid #005a9e; /* Darker blue border */
+}
+
+header h1 {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+nav {
+background-color: #333; /* Dark background for the menu */
+padding: 10px 0;
+}
+
+nav ul {
+list-style-type: none; /* Removes bullet points */
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+nav ul li {
+display: inline-block; /* Makes menu items sit side-by-side */
+margin: 0 15px;
+}
+
+nav ul li a {
+/* This controls the font colour for menu links */
+color: #ffffff;
+text-decoration: none; /* Removes the underline */
+font-weight: bold;
+padding: 5px 10px;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+background-color: #555; /* Adds a hover effect */
+}
+
+/* --- Main Content Area --- */
+main {
+padding: 30px;
+}
+
+main h2 {
+/* This controls the colour of the main heading */
+color: #0078d4;
+border-bottom: 2px solid #f0f2f5;
+padding-bottom: 10px;
+}
+
+/* --- Images --- */
+.content-image {
+max-width: 100%; /* Makes the image responsive */
+height: auto;
+border-radius: 8px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.link-image {
+    max-width: auto;
+    height: 15px;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: -2px;
+    margin-left: 0px;
+    margin-right: 2px;
+    }
+
+/* --- Footer --- */
+footer {
+text-align: center;
+padding: 5px;
+background-color: #333;
+color: #aaa;
+margin-top: 0px;
+}
