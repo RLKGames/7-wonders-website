@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 Wonders - Colosseum</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<!-- Main Content Container -->
+<div class="container">
+<main>
+<h2>Colosseum</h2>
+<p>Location: <a href="https://geohack.toolforge.org/geohack.php?pagename=Colosseum&params=41.8903_N_12.4922_E_type:landmark">Colosseum, Rome, Italy</a></p>
+<h3>Description</h3>
+<p>The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is the largest standing amphitheatre in the world. Construction began under the Emperor Vespasian (r. 69-79 AD) in 72 and was completed in AD 80 under his successor and heir, Titus (r. 79-81). Further modifications were made during the reign of Domitian (r. 81-96). The three emperors who were patrons of the work are known as the Flavian dynasty, and the amphitheatre was named the Flavian Amphitheatre.
+<p><a href=https://en.wikipedia.org/wiki/Colosseum>More info</a></p>
+</main>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+
+<script>
+<!-- Fetch header.html -->
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header').innerHTML = data);
+
+<!-- Fetch footer.html -->
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+</script>
+
+</body>
+</html>

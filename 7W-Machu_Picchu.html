@@ -3,53 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7 Wonders - Great Pyramid of Giza</title>
-
-
+<title>7 Wonders - Machu Picchu</title>
 
 <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
 
-<!-- Header Section -->
-<header>
-<h1>The 7 Wonders of the World</h1>
-</header>
-
-<!-- Navigation Menu with Placeholders -->
-<nav>
-<ul>
-<!-- "index.html" links to this page itself -->
-<li><a href="index.html">&#127968;Home</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg" alt="Image of the Pyramid of Khufu at Giza" class="link-image"><a href="7W-Great_Pyramid_of_Giza.html">Great Pyramid of Giza</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/2560px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg" alt="Image of a section of the Great Wall of China" class="link-image"><a href="7W-Great_Wall_of_China.html">Great Wall of China</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Treasury_petra_crop.jpeg/960px-Treasury_petra_crop.jpeg" alt="Image of the Treasury at Petra" class="link-image"><a href="7W-Petra.html">Petra</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg" alt="Image of the Roman Colosseum in Rome" class="link-image"><a href="7W-The_Colosseum.html">The colosseum</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/250px-Chichen_Itza_3.jpg" alt="Image of the Temple of Kukulca&#769;n at Chich&#233;n Itza&#769;" class="link-image"><a href="7W-Chichen_Itza.html">Chich&#233;n Itza&#769;</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/960px-Machu_Picchu%2C_2023_%28012%29.jpg" alt="Image of the Incan Citadel of Machu Picchu" class="link-image"><a href="7W-Machu_Picchu.html">Machu Picchu</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/250px-Taj_Mahal_%28Edited%29.jpeg" alt="Image of the Taj Mahal" class="link-image"><a href="7W-Taj_Mahal.html">Taj Mahal</a></li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg/500px-Christ_the_Redeemer_-_Cristo_Redentor.jpg" alt="Image of the Christ the Redeemer statue" class="link-image"><a href="7W-Christ_the_Redeemer.html">Christ the Redeemer</a></li>
-
-</ul>
-</nav>
+<!-- Header -->
+<div id="header"></div>
 
 <!-- Main Content Container -->
 <div class="container">
 <main>
-<h2>The Great Pyramid of Giza</h2>
-<p>Location: <a href="https://geohack.toolforge.org/geohack.php?pagename=Great_Pyramid_of_Giza&params=29_58_45_N_31_08_03_E_region:EG_type:landmark_scale:2000">Giza, Egypt (Near Cairo)</a></p>
+<h2>Machu Picchu</h2>
+<p>Location: <a href="https://geohack.toolforge.org/geohack.php?pagename=Machu_Picchu&params=13_09_48_S_72_32_44_W_type:landmark">Santa Maria, Peru</a></p>
 <h3>Description</h3>
-<p>The Great Pyramid of Giza is the largest Egyptian pyramid. It served as the tomb of pharaoh Khufu, who ruled during the Fourth Dynasty of the Old Kingdom. Built 2600 BC over a period of about 26 years, the pyramid is the oldest of the Seven Wonders of the Ancient World, and the only wonder that has remained largely intact. It is the most famous monument of the Giza pyramid complex, which is part of the UNESCO World Heritage Site "Memphis and its Necropolis". It is situated at the northeastern end of the line of the three main pyramids at Giza.
-<p><a href=https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza>More info</a></p>
+<p>Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a mountain ridge at 2,430 meters (7,970 ft). It is situated in the Machupicchu District of Urubamba Province about 80 kilometers (50 miles) northwest of Cusco, above the Sacred Valley and along the Urubamba River, which forms a deep canyon with a subtropical mountain climate.
+<p><a href=https://en.wikipedia.org/wiki/Machu_Picchu>More info</a></p>
 </main>
 </div>
 
-<!-- Footer Section -->
-<footer>
-<p>v0.2.4</p>
-<p>by RyanLittleKing</p>
-</footer>
+<!-- Footer -->
+<div id="footer"></div>
+
+
+<script>
+<!-- Fetch header.html -->
+fetch('header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header').innerHTML = data);
+
+<!-- Fetch footer.html -->
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer').innerHTML = data);
+</script>
 
 </body>
 </html>
